@@ -1,4 +1,49 @@
-
-article .card {
-    width: 375px;
+:root {
+  --primary-pale-blue: hsl(225, 100%, 94%);
+  --primary-bright-blue: hsl(245, 75%, 52%);
+  --neutral-very-pale-blue: hsl(225, 100%, 98%);
+  --neutral-desaturated-blue: hsl(224, 23%, 55%);
+  --neutral-dark-blue: hsl(223, 47%, 23%);
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+h2 {
+  color: var(--neutral-dark-blue);
+  font-weight: 900;
+  font-size: 1.7em;
+}
+p{
+  color: var(--neutral-desaturated-blue);
+  font-weight: 500;
+  font-size:1.2em;
+  letter-spacing: 1.8px;
+}
+article {
+  margin: 0 auto;
+  width: 450px;
+  height: 700px;
+  border-radius: 15px;
+  border: 1px solid black;
+  box-shadow: 0px 5px 5px;
+  overflow: hidden;
+}
+.text-container {
+  padding:14px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.text-container p {
+  width:73%;
+}
+.plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.plan * {
+  margin: 0.5em;
 }
